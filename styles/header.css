@@ -4,12 +4,13 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
+  border-bottom: 2px solid #898888;
 }
 
 .nav-bar {
   width: 100%;
   display: flex;
-  gap: 6%;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -22,7 +23,7 @@ header {
   height:100%;
   padding: 12px;
   display: flex;
-  gap: 10px;
+  gap: 6px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -30,15 +31,15 @@ header {
 
 .icon .company-logo {
   height: fit-content;
+  text-align: center;
 }
 
 .company-logo img {
-  width: 60px;
-  border-radius: 25px;
+  width: 40px;
 }
 
 .icon .company-name {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
 
   height: 100%;
@@ -47,8 +48,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: 7px solid white;
-  line-height: 1.5rem;
+  border-left: 5px solid white;
+  line-height: 1rem;
 }
 
 .cart-logo {
@@ -64,16 +65,16 @@ header {
 }
 
 .cart-logo .cart-tip {
-  color: black;
+  color: white;
   position: absolute;
   width: fit-content;
-  left: -34px;
-  right: -1px;
-  bottom: -18px;
+
+  bottom: 0;
   opacity: 0;
-  background-color: #dedede;
-  padding: 5px;
-  font-size: 15px;
+  background-color: #898888;
+  padding: 3px 5px;
+  font-size: 11px;
+  border: none;
 
   display: flex;
   justify-content: center;
@@ -89,31 +90,30 @@ header {
 }
 
 .cart-badge {
+  text-align: center;
   background-color: #ff8c00;
   color: white;
+  border-radius: 50%;
+  padding: 0px 5px;
 
   position: absolute;
-  top: 0px;
-  right: -4px;
-
-  padding: 4px 8px 4px 8px;
-  border-radius: 50%;
+  right: 8px;
+  top: 12px;
 }
-
 
 .menu {
   display: flex;
 }
 
 .menu li {
-  margin-left: 40px;
+  margin-left: 35px;
   position: relative;
   list-style: none;
 }
 
 .menu li a {
   color: white;
-  font-size: 23px;
+  font-size: 15px;
   font-weight: normal;
   display: inline-block;
   text-align: center;
@@ -124,12 +124,12 @@ header {
 
 .menu li a:hover {
   color: #b6b4b4;
-  border-bottom: 2px solid #b6b4b4;
+  border-bottom: 1px solid #b6b4b4;
 }
 
 .menu li a.active {
   color: #ff8c00;
-  border-bottom: 2px solid #ff8c00;
+  border-bottom: 1px solid #ff8c00;
 }
 
 .logo {
@@ -141,7 +141,7 @@ header {
   position: absolute;
   color: white;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: none;
 }
 
@@ -185,8 +185,7 @@ header {
 .dashboard-details .signup,
 .dashboard-details .login {
   text-align: center;
-  padding: 15px 30px;
-  font-size: 20px;
+  padding: 11px 10px;
   border-radius: 10px;
   border: none;
 
@@ -201,7 +200,7 @@ header {
 
 .dashboard-details .signup {
   background: none;
-  border: 2px solid #898989;
+  border: 1px solid #898989;
 }
 
 .dashboard-details .login {
@@ -211,10 +210,10 @@ header {
 .dashboard-details a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 12px;
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1200px) {
   .cart-logo {
     display: none;
   }

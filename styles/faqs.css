@@ -1,98 +1,71 @@
-body {
-  background-color: black;
-}
-
 .main {
   display: flex;
   flex-direction: column;
   height: fit-content;
-}
-
-.faqsheader {
-  background-color: black;
-  height: 450px;
-  margin-top: -26px;
-
-  display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-size: 40px;
-  font-weight: 700;
-  border-bottom: 4px solid white;
+  gap: 50px;
+
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 100px;
 }
 
-.title  {
-  color: white;
-  background-color: #24262b;;
+.main .faqsheader {
+  font-size: 16px;
+}
 
+.main .faqsheader span {
+  color: #ff8c00;
+}
+
+.faq-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 17px;
+}
+
+.faq-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: fit-content;
-  padding: 40px 0px 40px;
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.title h2 {
-  font-size: 3rem;
-}
-
-.faq {
-  max-width: 700px;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-bottom: 2px solid white;
-  cursor: pointer;
+  margin-bottom: 15px;
 }
 
 .question {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  color: #065577;
 }
 
-.question h3 {
-  font-size: 1.8rem;
+.question span {
+  color: #ff8c00;
 }
 
-.solution {
+.answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1.4s ease;
+  transition: max-height 0.5s ease-in-out;
+  text-align: left;
+  margin-top: 5px;
+  color: #898888;
+  font-size: 16px;
 }
 
-.solution p {
-  font-size: 1.4rem;
-  line-height: 1.6;
-  padding-top: 1rem;
+.arrow {
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 1s ease;
 }
 
-.faq.active .solution {
-  max-width: 300px;
-  animation: fade 1s ease-in-out;
-}
-
-.faq.active svg {
+.arrow.up {
   transform: rotate(180deg);
-}
-
-svg {
-  transition: .5s ease-in;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateY(0px);
-  }
 }

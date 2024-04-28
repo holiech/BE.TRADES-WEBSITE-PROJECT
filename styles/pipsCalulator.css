@@ -3,14 +3,14 @@ section {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  gap: 50px;
+  gap: 30px;
 
   padding-bottom: 100px;
 }
 
 section h1 {
-  font-size: 65px;
-  color: #065577;
+  font-size: 30px;
+  color: black;
   font-weight: 700;
 }
 
@@ -29,11 +29,11 @@ section h1 span {
 .calculator {
   background: #065577;
   width: 100%;
-  max-width: 500px;
-  min-height: 650px;
+  max-width: 350px;
+  min-height: 450px;
   display: flex;
   flex-direction: column;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   overflow: hidden;
   box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.26);
   display: none;
@@ -46,9 +46,9 @@ section h1 span {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0.5rem;
-  border-radius: 1rem;
+  border-radius: .7rem;
 
-  font-size: 1.4rem;
+  font-size: .9rem;
   color: #065577;
   font-weight: 700;
   border: none;
@@ -63,7 +63,7 @@ section h1 span {
   border-radius: 5px;
   outline: none;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: .7rem;
   cursor: pointer;
 }
 
@@ -71,7 +71,7 @@ section h1 span {
   text-decoration: none;
   border: none;
   color: #898888;
-  font-size: 1.3rem;
+  font-size: .9rem;
   border-radius: 0;
   cursor: pointer;
 }
@@ -80,26 +80,26 @@ section h1 span {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  min-height: 200px;
-  padding: 1.5rem;
+  min-height: 165px;
+  padding: 1rem;
   color: white;
   text-align: right;
   background: #ff8c0045;
   box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.26);
 
-  margin: 15px;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
+  margin: 10px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   flex: 1 1 0%;
 }
 
 .display .input {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
 }
 
 .display .output {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   width: 100%;
   max-width: 100%;
@@ -117,13 +117,14 @@ section h1 span {
 
 .keys {
   background: #ff8c00;
-  padding: 1.5rem;
-  border-radius: 1.5rem 1.5rem 0 0;
+  padding: 1rem;
+  border-radius: 1rem 1rem 1rem 1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-gap: 1rem;
   box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.26);
+  margin: 0 6px 6px 6px;
 }
 
 .keys .key {
@@ -132,9 +133,9 @@ section h1 span {
 
   display: block;
   height: 0;
-  padding-top: 80%;
+  padding-top: 70%;
   background: #065577;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   transition: 0.2s;
   user-select: none;
 }
@@ -145,7 +146,7 @@ section h1 span {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   color: white;
 }
@@ -166,11 +167,11 @@ section h1 span {
 .calculator1 {
   background: #065577;
   width: 100%;
-  max-width: 500px;
-  min-height: 650px;
+  max-width: 350px;
+  min-height: 450px;
   display: flex;
   flex-direction: column;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   overflow: hidden;
   box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.26);
 }
@@ -179,26 +180,26 @@ section h1 span {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  min-height: 438px;
+  min-height: 312px;
   padding: 1.5rem;
   color: white;
   text-align: right;
   background: #ff8c0045;
   box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.26);
 
-  margin: 15px;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
+  margin: 10px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   flex: 1 1 0%;
 }
 
 .display1 .input {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
 }
 
 .display1 .output {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   width: 100%;
   max-width: 100%;
@@ -207,13 +208,14 @@ section h1 span {
 
 .keys1 {
   background: #ff8c00;
-  padding: 1.5rem;
-  border-radius: 1.5rem 1.5rem 0 0;
+  padding: 1rem;
+  border-radius: 1rem 1rem 0 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 1rem;
   box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.26);
+  margin: 0 6px 6px 6px;
 }
 
 .keys1 .key {
@@ -222,9 +224,9 @@ section h1 span {
 
   display: block;
   height: 0;
-  padding-top: 40%;
+  padding-top: 30%;
   background: #065577;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   transition: 0.2s;
   user-select: none;
 }
@@ -235,7 +237,7 @@ section h1 span {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   color: white;
 }
@@ -253,20 +255,20 @@ section h1 span {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 10px 15px 15px 15px;
-  font-size: 1.5rem;
+  padding: 5px 10px 10px 10px;
+  font-size: 1rem;
 }
 
 .keys2 .key {
   background: #ff8c00;
   cursor: pointer;
   border-radius: 1rem;
-  padding: 12px;
+  padding: 9px;
   width: 50%;
 }
 
 .keys2 .key span {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 

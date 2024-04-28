@@ -6,7 +6,7 @@
 
 body {
   font-family: Roboto, Arial;
-  padding-top: 150px;
+  padding-top: 90px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -19,4 +19,47 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+}
+
+.container1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.bubbles {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bubbles span {
+  width: 4px;
+  height: 4px;
+  background: #065577;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #06557744,
+  0 0 10px #065577,
+  0 0 25px #065577;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(200s / var(--1));
+}
+
+.bubbles span:nth-child(even) {
+  background: #ff8c00;
+  box-shadow: 0 0 0 3px #ff8c0044,
+  0 0 10px #ff8c00,
+  0 0 20px #ff8c00;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
 }

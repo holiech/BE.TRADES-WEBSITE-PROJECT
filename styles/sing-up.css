@@ -1,53 +1,9 @@
 body {
-  padding-top: 200px;
-}
-
-.container1 {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-
-}
-
-.bubbles {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.bubbles span {
-  width: 4px;
-  height: 4px;
-  background: #065577;
-  margin: 0 4px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 3px #06557744,
-  0 0 10px #065577,
-  0 0 25px #065577;
-  animation: animate 15s linear infinite;
-  animation-duration: calc(200s / var(--1));
-}
-
-.bubbles span:nth-child(even) {
-  background: #ff8c00;
-  box-shadow: 0 0 0 3px #ff8c0044,
-  0 0 10px #ff8c00,
-  0 0 20px #ff8c00;
-}
-
-@keyframes animate {
-  0% {
-    transform: translateY(100vh) scale(0);
-  }
-
-  100% {
-    transform: translateY(-10vh) scale(1);
-  }
+  padding-top: 150px;
 }
 
 .menu li a {
-  border-bottom: 2px solid #065577;
+  border-bottom: 1px solid #065577;
 }
 
 .sing-up-bar {
@@ -55,31 +11,31 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5%;
-  padding: 0 5px 40px 40px;
-  margin-bottom: 100px;
+  padding: 0 30px 40px 30px;
+  margin-bottom: 50px;
 }
 
 .sign-up {
-  min-width: 550px;
-  max-width: 600px;
+  min-width: 360px;
+  max-width: 400px;
   background: white;
-  padding: 30px;
+  padding: 20px;
   border: 1px solid #898888;
-  border-radius: 40px;
+  border-radius: 25px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.26);
   margin-bottom: 20px;
 }
 
 .sign-up h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   color: #065577;
 }
 
 .sign-up h4 {
   text-align: center;
   margin-top: 10px;
-  font-size: 22px;
+  font-size: 18px;
   color: #898888;
   font-weight: normal;
 }
@@ -91,33 +47,34 @@ form {
 
 form .inp-box {
   position: relative;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
-  .toggle-password {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
 
 .fa-eye {
-  font-size: 20px;
+  font-size: 12px;
+  color: #898888;
 }
 
 form input {
   width: 100%;
-  padding: 12px 0 5px 0;
-  font-size: 20px;
+  padding: 9px 0 5px 0;
+  font-size: 16px;
   min-width: 80px;
   margin: 5px 0;
   border: none;
-  border-bottom: 2px solid #24262b;
-  border-right: 2px solid #24262b;
+  border-bottom: 1px solid #24262b;
+  border-right: 1px solid #24262b;
   outline: none;
   resize: none;
-  border-radius: 12px;
+  border-radius: 10px;
   transition: .5s ease-in;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.26);
 }
@@ -131,7 +88,7 @@ form span {
   left: 0;
   top: -8px;
   padding: 5px 0;
-  font-size: 20px;
+  font-size: 16px;
   margin: 10px 0;
   pointer-events: none;
   transition: .5s;
@@ -141,17 +98,17 @@ form span {
 form input:focus ~ span,
 form input:valid ~ span {
   color: #ff8c00;
-  font-size: 18px;
+  font-size: 14px;
   transform: translateY(-20px);
 }
 
 form .submit-btn {
-  width: 60%;
+  width: 70%;
   background: #065577;
   color: white;
   cursor: pointer;
-  padding: 15px 40px;
-  font-size: 25px;
+  padding: 10px 30px;
+  font-size: 17px;
   border: none;
   border-radius: 15px;
   margin-top: 25px;
@@ -164,7 +121,7 @@ form .submit-btn:hover {
 }
 
 form p {
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 20px;
   font-weight: 600;
 }
@@ -176,14 +133,14 @@ form a {
 
 .signupDescription {
   display: flex;
-  gap: 5%;
+  gap: 20px;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  height: 866px;
+  height: 670px;
   padding: 0 0 20px 0px;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .loginDescription {
@@ -195,29 +152,29 @@ form a {
   height: 525px;
   padding: 20px 0px;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .signupDescription img {
-  height: 550px;
-  width: 826px;
+  height: 400px;
+  width: 700px;
 }
 
 .loginDescription img {
-  height: 405px;
-  min-width: 826px;
+  height: 300px;
+  min-width: 700px;
 }
 
 .signupDescription h2 {
   color: black;
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   display: inline-block;
 }
 
 .loginDescription h2 {
   color: black;
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   display: inline-block;
 }
@@ -234,12 +191,12 @@ form a {
   text-align: justify;
   display: inline-block;
   color: #898989;
-  max-width: 900px;
+  max-width: 700px;
 }
 
 .loginDescription p {
   text-align: justify;
   display: inline-block;
   color: #898989;
-  max-width: 900px;
+  max-width: 700px;
 }

@@ -3,13 +3,13 @@ const normalCalculator = document.getElementById('normalCalculator');
 const pipsCalculator = document.getElementById('pipsCalculator');
 
 modeSelect.addEventListener('change', function() {
-		if (modeSelect.value === 'normal') {
-				normalCalculator.style.display = 'flex';
-				pipsCalculator.style.display = 'none';
-		} else if (modeSelect.value === 'pips') {
-				normalCalculator.style.display = 'none';
-				pipsCalculator.style.display = 'flex';
-		}
+	if (modeSelect.value === 'normal') {
+		normalCalculator.style.display = 'flex';
+		pipsCalculator.style.display = 'none';
+	} else if (modeSelect.value === 'pips') {
+		normalCalculator.style.display = 'none';
+		pipsCalculator.style.display = 'flex';
+	}
 });
 
 const keys = document.querySelectorAll('.key');

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="view-transition" content="same-origin">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Dashboard~be.trades</title>
@@ -27,7 +28,7 @@
           <span class="material-icons-outlined">menu</span>
         </div>
         <div class="header-left">
-          <span class="material-icons-outlined">search</span>
+          <span class="affiliateName">BE TRADES</span>
         </div>
         <div class="header-right">
           <span class="material-icons-outlined">notifications</span>
@@ -53,36 +54,36 @@
 
         <ul class="sidebar-list">
           <li class="active">
-            <a href="#"><span class="material-icons-outlined">dashboard</span> Dashboard</a>
+            <a href="#"><i class="fa-solid fa-box"></i> Dashboard</a>
           </li>
-          <li>
+          <li class="importantMenu">
             <a href="#">
-              <span class="material-icons-outlined">inventory_2</span> Products
+              <i class="fa-regular fa-moon"></i> Mentorship <span class="sideMenuToggle">></span>
             </a>
+
+            <ul>
+              <li><a href="#">Beginner Class</a></li>
+              <li><a href="#">Course</a></li>
+            </ul>
           </li>
-          <li>
-            <a href="#">
-              <span class="material-icons-outlined">category</span> Categories
-            </a>
-          </li>
-          <li>
+          <li class="importantMenu">
             <a href="affiliateprograme.html">
-              <span class="material-icons-outlined">groups</span> Affiliate&nbsp;Programe
+              <i class="fa-solid fa-people-group"></i> Affiliate <span class="sideMenuToggle">></span>
+            </a>
+
+            <ul>
+              <li><a href="#">My Team</a></li>
+              <li><a href="#">Withdraw</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-signal"></i> Performance
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="material-icons-outlined">fact_check</span> Inventory
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="material-icons-outlined">poll</span> Reports
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="material-icons-outlined">settings</span> Logout
+              <i class="fa-solid fa-right-from-bracket"></i> Logout
             </a>
           </li>
         </ul>
@@ -90,7 +91,31 @@
       <!-- End Sidebar -->
 
       <!-- Main -->
+      <main class="main-container">
+        <div class="mainDash-container">
+          <div class="dashHeader">
+            <h1 class="dashTitle">DASHBOARD</h1>
+            <i class="fa-solid fa-box fa-2x"></i>
+          </div>
 
+          <div class="mainDashContent">
+            <h3>It's&nbsp;Nice seeing&nbsp;You!</h3>
+
+            <div class="dashBrivian">
+              <p class="dashIntro">It's fantastic to have you return to the world of currency trading🥳. As you embark on this journey once more, remember that your dedication and perseverance are the keys to unlocking success in the dynamic forex market. We're here to support you every step of the way as you refine your strategies and explore new opportunities!</p>
+
+              <div class="accountStatus">
+                <p>Account status</p>
+                <div class="active-inactive">
+                  <p class="reflector">R</p>
+                  <p>Active</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </main>
 
     </div>
 

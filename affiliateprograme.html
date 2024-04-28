@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="view-transition" content="same-origin">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Dashboard~be.trades</title>
@@ -27,9 +28,11 @@
         <div class="menu-icon" onclick="openSidebar()">
           <span class="material-icons-outlined">menu</span>
         </div>
+
         <div class="header-left">
-          <span class="material-icons-outlined">search</span>
+          <span class="affiliateName">Be <span>MULA</span></span>
         </div>
+
         <div class="header-right">
           <span class="material-icons-outlined">notifications</span>
           <span class="material-icons-outlined">email</span>
@@ -54,36 +57,26 @@
 
         <ul class="sidebar-list">
           <li>
-            <a href="Dashboard.html"><span class="material-icons-outlined">dashboard</span> Dashboard</a>
+            <a href="Dashboard.html"><i class="fa-solid fa-box"></i> Dashboard</a>
           </li>
           <li>
             <a href="#">
-              <span class="material-icons-outlined">inventory_2</span> Products
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="material-icons-outlined">category</span> Categories
+              <i class="fa-regular fa-moon"></i> Mentorship <span class="sideMenuToggle">></span>
             </a>
           </li>
           <li class="active">
             <a href="#">
-              <span class="material-icons-outlined">groups</span> Affiliate&nbsp;Programe
+              <i class="fa-solid fa-people-group"></i> Affiliate <span class="sideMenuToggle">></span>
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="material-icons-outlined">fact_check</span> Inventory
+              <i class="fa-solid fa-signal"></i> Performance
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="material-icons-outlined">poll</span> Reports
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="material-icons-outlined">settings</span> Logout
+              <i class="fa-solid fa-right-from-bracket"></i> Logout
             </a>
           </li>
         </ul>
@@ -92,13 +85,19 @@
 
       <!-- Main -->
       <main class="main-container">
+        <div class="dashHeader">
+          <h1 class="dashTitle">AFFILIATE</h1>
+          <i class="fa-solid fa-people-group fa-2x
+          "></i>
+        </div>
+
         <h1> Welcome Back: <span>blessedemmanuel254</span></h1>
 
         <div class="affiliate-layout">
           <div class="card">
             <div class="affidesc">
               <h3>DIRECT&nbsp;REFERRALS</h3>
-              <p>Your group</p>
+              <p>Your team</p>
               <h2>56</h2>
             </div>
 
@@ -112,7 +111,7 @@
               <h2>KSH&nbsp;20,000</h2>
             </div>
 
-            <span class="material-icons-outlined">poll</span>
+            <i class="fa-solid fa-money-check-dollar fa-2x"></i>
           </div>
 
           <div class="card">
@@ -122,7 +121,7 @@
               <h2>KSH&nbsp;13,000</h2>
             </div>
 
-            <span class="material-icons-outlined">poll</span>
+            <i class="fa-regular fa-money-bill-1 fa-2x"></i>
           </div>
 
           <div class="card">
@@ -132,8 +131,33 @@
               <h2>KSH&nbsp;2,000</h2>
             </div>
 
-            <span class="material-icons-outlined">poll</span>
+            <i class="fa-solid fa-recycle fa-2x"></i>
           </div>
+
+          <div class="card">
+            <div class="affidesc">
+              <h3>BONUS</h3>
+              <p>Bonus</p>
+              <h2>KSH&nbsp;1,000</h2>
+            </div>
+
+            <i class="fa-solid fa-gift fa-2x"></i>
+          </div>
+        </div>
+        <div class="loweraffiliate">
+          <h4>YOUR&nbsp;REFFERAL&nbsp;LINK:</h4>
+          <P>https//www.betrades.ke/sshp/php?</P>
+          <div class="linkbtn">
+            <button class="copy-btn">Copy&nbsp;Link</button>
+            <button class="sharebtn">Share</button>
+          </div>
+          <h3>
+            HOORAY🥳! YOU'VE REACHED THE MINIMUM WITHDRAW AMOUNT! YOU CAN NOW PROCEED WITH YOUR WITHDRAWAL. SIMPLY CLICK ON THE WITHDRAWAL BUTTON BELOW TO ACCESS YOUR FUNDS. THANK YOU FOR CHOOSING OUR SERVICES!.
+          </h3>
+
+          <a class="withDrawButton" href="#">WITHDRAW</a>
+
+          <p class="copyRight-p">Copyright &copy; 2024 <span>Be.Trades </span>&#8226; All rights reserved.</p>
         </div>
       </main>
     </div>

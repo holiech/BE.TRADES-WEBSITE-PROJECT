@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/faqs.css">
   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,7 @@
 
           <div class="cart-logo">
             <div class="cart-icon">
-              <i class="fa fa-cart-plus fa-3x" aria-hidden="true"></i>
+              <i class="fa fa-cart-plus fa-2x" aria-hidden="true"></i>
             </div>
             <div class="cart-badge">0</div>
             <div class="cart-tip">
@@ -62,61 +62,70 @@
 
     <div class="main">
       <div class="faqsheader">
-        <h1>
-          Have any Questions?<br>Let Us help.
-        </h1>
+        <h1>QUESTION <span>&</span> ANSWER</h1>
       </div>
 
-      <div class="title">
-        <h2>
-          FAQs
-        </h2>
-
-        <div class="faq">
-          <div class="question">
-            <h3>What is betrades?</h3>
-
-            <svg width="15" height="10" viewBox="0 0 42 25">
-              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
-            </svg>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">
+            How can your platform help me as a beginner?<span class="arrow">▼</span>
           </div>
-
-          <div class="solution">
-            <p>Is simply a forex trading community which was founded in 2023
-              according to the recent resaerch
-            </p>
+          <div class="answer">
+            0ur platform provides comprehensive resources and tutorials designed specifically for beginners(besides the Mentorship courses). You'll learn the basics of forex trading ,risk management strategies and more to kickstart your trading journey with confidence.
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">
+            Do I need any experience in trading to join your courses?<span class="arrow">▼</span>
+          </div>
+          <div class="answer">
+            No prior trading experience is required. Our courses are suitable for individuals with varying levels of experience, from complete beginners to seasoned traders looking to refine their skills.
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">
+            What sets your platform apart from other forex education providers?<span class="arrow">▼</span>
+          </div>
+          <div class="answer">
+            Our platform offers a unique blend of educational content, interactive learning tools, and personalized support from experienced traders. Additionally, our affiliate program provides opportunities for our members to earn passive income by referring others to our platform.
           </div>
         </div>
 
-        <div class="faq">
-          <div class="question">
-            <h3>Is it easily accessible?</h3>
-
-            <svg width="15" height="10" viewBox="0 0 42 25">
-              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
-            </svg>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">
+            How can your forex education platform help me as a beginner?<span class="arrow">▼</span>
           </div>
-
-          <div class="solution">
-            <p>Is simply a forex trading community which was founded in 2023
-              according to the recent resaerch
-            </p>
+          <div class="answer">
+            0ur platform provides comprehensive resources and tutorials designed specifically for beginners(besides the advanced courses). You'll learn the basics of forex trading ,risk management strategies and more to kickstart your trading journey with confidence.
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">
+            Do I need any prior experience in trading to join your courses?<span class="arrow">▼</span>
+          </div>
+          <div class="answer">
+            No prior trading experience is required. Our courses are suitable for individuals with varying levels of experience, from complete beginners to seasoned traders looking to refine their skills.
           </div>
         </div>
 
-        <div class="faq">
-          <div class="question">
-            <h3>How does the affiliate programme work?</h3>
-
-            <svg width="15" height="10" viewBox="0 0 42 25">
-              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
-            </svg>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">
+            How can your forex education platform help me as a beginner?<span class="arrow">▼</span>
           </div>
-
-          <div class="solution">
-            <p>Is simply a forex trading community which was founded in 2023
-              according to the recent resaerch
-            </p>
+          <div class="answer">
+            0ur platform provides comprehensive resources and tutorials designed specifically for beginners(besides the advanced courses). You'll learn the basics of forex trading ,risk management strategies and more to kickstart your trading journey with confidence.
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">
+            Do I need any prior experience in trading to join your courses?<span class="arrow">▼</span>
+          </div>
+          <div class="answer">
+            No prior trading experience is required. Our courses are suitable for individuals with varying levels of experience, from complete beginners to seasoned traders looking to refine their skills.
           </div>
         </div>
       </div>
@@ -139,19 +148,19 @@
       </div>
 
       <ul class="social-handles">
-        <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
-        <li><a href="www.youtube.com/@blessedemmanuel254
+        <li><a class="Instagram" href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+        <li><a class="YouTube" href="www.youtube.com/@blessedemmanuel254
           "><i class="fa-brands fa-youtube fa-2x"></i></a></li>
-        <li><a href="#"><i class="fa-solid fa-envelope fa-2x"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-telegram fa-2x"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-whatsapp fa-2x"></i></a></li>
+        <li><a class="Email" href="#"><i class="fa-solid fa-envelope fa-2x"></i></a></li>
+        <li><a class="Telegram" href="#"><i class="fa-brands fa-telegram fa-2x"></i></a></li>
+        <li><a class="WhatsAapp" href="#"><i class="fa-brands fa-whatsapp fa-2x"></i></a></li>
       </ul>
 
       <ul class="footer-menu">
-        <li><a href="index.html">Home</a></li>
+        <li><a class="active"  href="#">Home</a></li>
         <li><a href="mentorship.html">Mentorship&nbsp;Plan</a></li>
         <li><a href="pipsCalculator.html">Pips&nbsp;Calculator</a></li>
-        <li><a class="active" href="#">Faqs</a></li>
+        <li><a href="faqs.html">Faqs</a></li>
         <li><a href="contact-us.html">Contact&nbsp;Us</a></li>
       </ul>
 
