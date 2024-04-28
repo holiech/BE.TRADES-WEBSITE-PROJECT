@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Dashboard~be.trades</title>
+    <link rel="website icon" type="png" 
+    href="images/betradeslogo.png">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/Dashboard.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header> 
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <div class="company-logo">
+              <img src="images/betradeslogo.png">
+            </div>
+            <div class="company-name">
+              <p>BE<br>TRADES</p>
+            </div>
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="active">
+            <a href="#"><span class="material-icons-outlined">dashboard</span> Dashboard</a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="material-icons-outlined">inventory_2</span> Products
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="material-icons-outlined">category</span> Categories
+            </a>
+          </li>
+          <li>
+            <a href="affiliateprograme.html">
+              <span class="material-icons-outlined">groups</span> Affiliate&nbsp;Programe
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="material-icons-outlined">fact_check</span> Inventory
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="material-icons-outlined">poll</span> Reports
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="material-icons-outlined">settings</span> Logout
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+
+
+    </div>
+
+    <!-- Custom JS -->
+    <script src="styles/Dashboard.js"></script>
+  </body>
+</html>

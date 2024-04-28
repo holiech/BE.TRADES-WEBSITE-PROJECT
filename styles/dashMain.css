@@ -1,0 +1,68 @@
+/*affiliateprograme*/
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+    width: 100%;
+}
+
+.main-container h1 {
+  text-align: center;
+  color: #065577;
+  font-size: 30px;
+
+}
+
+.affiliate-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.affiliate-layout .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  color: white;
+  border-radius: 10px;
+}
+
+.affiliate-layout .card h3 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.affiliate-layout .card h2 {
+  font-size: 25px;
+}
+
+.affiliate-layout .card p {
+  margin-bottom: 20px;
+    color: #898888;
+}
+
+.card:first-child {
+  background: #065577;
+}
+
+.card:nth-child(2) {
+  background: #ff8c00;
+}
+
+.card:nth-child(3) {
+  background: #dedede;
+  color: black;
+}
+
+.card:nth-child(4) {
+  background: red;
+}
+
+@media screen and (max-width: 1450px) {
+  .affiliate-layout {
+    grid-template-columns: 1fr;
+  }
+}

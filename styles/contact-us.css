@@ -1,0 +1,221 @@
+.main {
+  height: fit-content;
+  min-width: 320px;
+}
+
+.contact-us-text {
+  background-color: black;
+  color: white;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: -26px;
+  min-width: 320px;
+}
+
+.contact-us-text p{
+  color: #b6b4b4;
+  font-size: 20px;
+  margin-top: 40px;
+  font-weight: 400;
+}
+
+.contact-us-content {
+  margin-top: 80px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us-content .introduction {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.contact-us-content .introduction h2 {
+  position: relative;
+}
+
+.contact-us-content .introduction h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-color: black;
+  height: 4px;
+  width: 180px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.container .helpcenter {
+  width: 40%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  vertical-align: top;
+}
+
+.container .helpcenter h2 {
+  color: #065577;
+  font-weight: 700;
+  min-width: 86px;
+  margin-bottom: 20px;
+}
+
+.formfill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formfill .mainfill {
+  margin-right: 20px;
+}
+
+.formfill .inputbox, 
+.helpcenter .textarea {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.helpcenter .textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+.formfill .inputbox input,
+.helpcenter .textarea textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  min-width: 80px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #24262b;
+  outline: none;
+  resize: none;
+}
+
+.helpcenter .textarea textarea {
+  height: 100px;
+  width: 94%;
+  padding: 5px 0;
+  font-size: 16px;
+  min-width: 140.2px;
+  margin: 10px 0;
+  border: 1px solid #666;
+  outline: none;
+  resize: none;
+}
+
+.formfill .inputbox span,
+.helpcenter .textarea span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.4s;
+  color: #666;
+}
+
+.formfill .inputbox input:focus ~ span,
+.formfill .inputbox input:valid ~ span,
+.helpcenter .textarea textarea:focus ~ span, 
+.helpcenter .textarea textarea:valid ~ span {
+  color: #065577;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.container .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-top: 25px;
+}
+
+.container .contactInfo .infobox {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container .contactInfo .infobox .box {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b6b4b4;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.container .contactInfo .infobox .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.container .contactInfo .infobox .info h3{
+  font-weight: 600;
+  color: #065577;
+}
+
+.helpcenter .textarea input[type="submit"] {
+  width: 100px;
+  background: #065577;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+}
+
+@media (max-width: 781px) {
+  .contact-us-content {
+    padding: 50px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .container .helpcenter {
+    margin-bottom: 40px;
+    margin-left: 9%;
+  }
+
+  .container .contactInfo {
+    margin-left: 15%;
+  }
+
+  .contact-us-content .introduction {
+    padding-left: 20%;
+  }
+}
